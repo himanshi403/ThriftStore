@@ -54,11 +54,11 @@ const ExploreMorePage = () => {
     fetchItems();
   }, []);
 
-  // Handle Add to Cart for T-shirts, Tops, and Trousers
+ 
   const handleAddToCart = (item) => {
-    addToCart(item); // Add to cart via context
+    addToCart(item); 
     setAddedQuantity((prevQuantity) => prevQuantity + 1); // Increment the quantity
-    setIsModalOpen(true); // Show the flash card/modal
+    setIsModalOpen(true); 
   };
 
   // Handle View Cart
@@ -90,7 +90,7 @@ const ExploreMorePage = () => {
       </div>
 
       {/* Tops Section */}
-      <h2>Tops Section</h2> {/* Heading for Tops */}
+      <h2>Tops Section</h2> 
 
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
@@ -107,7 +107,7 @@ const ExploreMorePage = () => {
       </div>
 
       {/* Trousers Section */}
-      <h2>Trousers Section</h2> {/* Heading for Trousers */}
+      <h2>Trousers Section</h2>
 
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error}</p>}
